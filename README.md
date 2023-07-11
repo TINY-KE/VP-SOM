@@ -15,6 +15,7 @@ We have tested the system in Ubuntu 18.04.
 ## 2. Building
 
   + Create ROS workspace and download our package:
+
         ```
         cd {ROS_WORKSPACE}/src
         git clone https://github.com/TINY-KE/VP-SOM.git
@@ -22,6 +23,7 @@ We have tested the system in Ubuntu 18.04.
         ```
 
   + Complie the thirdparty libraries of Active SLAM:
+        
         ```
         cd Active_SLAM_based_on_VP-SOM
         chmod +x build_thirdparty.sh       
@@ -29,6 +31,7 @@ We have tested the system in Ubuntu 18.04.
         ```
         
   + Complie the Active SLAM and YOLO:
+        
         ```
         cd {ROS_WORKSPACE}
         catkin_make
