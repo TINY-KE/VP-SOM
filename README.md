@@ -36,20 +36,20 @@ We have tested the system in Ubuntu 18.04.
 
 ## 3. Usage of view planning method
 There are many parameters in the file "config/kinectv1.yaml" that can affect VP-SOM. This section will introduce these parameters.
-+ **[PubGlobalGoal]**: 
-+ **PubLocalGoal**: 
-+ **MAM.Reward_angle_cost**:
-+ **MAM.Reward_dis**:
-+ **Planle.Safe_radius**:
-+ **ConstraintType**:
-+ **ObserveMaxNumBackgroudObject**:
-+ **IE.ThresholdEndMapping**:
-+ **Plane.Height.Max** and **Plane.Height.Min**:
-+ **IE.PublishIEwheel**:
-+ **IE.P_occ**, **IE.P_free**, **IE.P_prior**:
-+ **IE.ThresholdPointNum**:
-+ Series of **Trobot_camera**:
-+ Series of **Tworld_camer**:
++ **[PubGlobalGoal]** : 
++ **[PubLocalGoal]** : 
++ **[MAM.Reward_angle_cost]** :
++ **[MAM.Reward_dis]** :
++ **[Planle.Safe_radius]** :
++ **[ConstraintType]** :
++ **[ObserveMaxNumBackgroudObject]** :
++ **[IE.ThresholdEndMapping]** :
++ **[Plane.Height.Max** and **[Plane.Height.Min]** :
++ **[IE.PublishIEwheel]** :
++ **[IE.P_occ**, **[IE.P_free**, **[IE.P_prior]** :
++ **[IE.ThresholdPointNum]** :
++ Series of **[Trobot_camera]** :
++ Series of **[Tworld_camer]** :
 + Other parameters have little effect and will be updated in the future.
 
 ## 4. Simulization Environment and Fabo robot
