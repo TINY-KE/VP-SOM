@@ -113,13 +113,13 @@ There are many parameters in the file "config/kinectv1.yaml" that can affect VP-
 
 ## 6. Evaluation
 The results of sparse object map and observation trajectories of different view-planning methods are saved in "eval/temp". Evaluate various methods by comparing sparse object maps and observation trajectories.
-    ```
-    rosrun active_slam_vpsom eval 
-    ```
+```
+rosrun active_slam_vpsom eval 
+```
 
 The groudtruth of object models in the simulation environments can be extracted from the "world" file of gazebo
-    ```
-    rosrun active_eao_new extract_gazebo_groudth  [the path of gazebo world file]
-    ```
+```
+rosrun active_eao_new extract_gazebo_groudth  [the path of gazebo world file]
+```
 
 Other details to be updated later.
