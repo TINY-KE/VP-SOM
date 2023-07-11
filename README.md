@@ -55,19 +55,20 @@ There are many parameters in the file "config/kinectv1.yaml" that can affect VP-
 ## 4. Simulization Environment and Fabo robot
 + 1. Simulization Environment
   + One backgroud object
-        ```
-        roslaunch ASLAM_gazebo_world hokuyo_kinectv1_bringup_moveit_1bo.launch
-        ```
+  
+    ```
+    roslaunch ASLAM_gazebo_world hokuyo_kinectv1_bringup_moveit_1bo.launch
+    ```
 
   + Two backgroud object
-      ```
-      roslaunch ASLAM_gazebo_world hokuyo_kinectv1_bringup_moveit_2bo.launch 
-      ```
+    ```
+    roslaunch ASLAM_gazebo_world hokuyo_kinectv1_bringup_moveit_2bo.launch 
+    ```
 
   + Three backgroud object
-      ```
-      roslaunch ASLAM_gazebo_world hokuyo_kinectv1_bringup_moveit_3bo.launch 
-      ```
+    ```
+    roslaunch ASLAM_gazebo_world hokuyo_kinectv1_bringup_moveit_3bo.launch 
+    ```
     <figure>
     <p align="center" >
     <img src='./Fabo_robot_and_environment/ASLAM_gazebo_world/pic/environment.png' width=1000 alt="Figure 1"/>
@@ -76,13 +77,15 @@ There are many parameters in the file "config/kinectv1.yaml" that can affect VP-
 
 + 2. Fabo robot controller
   + Control robot by keyboard. This corresponds to manual mode where PubGlobalGoal=0. Press "IJLK," to control the movement of the chassis. Press "G" to publish a signal that has arrived at the NBV to the view-planning program to start a new round of view-planning
-        ```
-        roslaunch fabo_teleop fabo_teleop.launch
-        ```
+    
+    ```
+    roslaunch fabo_teleop fabo_teleop.launch
+    ```
   + Robot move autonomously by MoveIt and 2D grid map. This corresponds to autonomous mode where PubGlobalGoal=1.
-        ```
-        roslaunch fabo_robot_gazebo  fake_navigation.launch
-        ```
+    
+    ```
+    roslaunch fabo_robot_gazebo  fake_navigation.launch
+    ```
 
 
 ## 5. Test the Active SLAM
