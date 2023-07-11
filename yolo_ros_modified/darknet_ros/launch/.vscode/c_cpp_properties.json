@@ -1,0 +1,61 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/zhjd/workspace/cartographer_build/devel/include/**",
+        "/home/zhjd/ws_active/devel/include/**",
+        "/home/zhjd/ws_turtlebot_custom/devel/include/**",
+        "/opt/ros/melodic/include/**",
+        "/home/zhjd/ws_active/src/robot/Indoor-mobile-robot-with-arms/src/BehaviorModule/include/**",
+        "/home/zhjd/ws_active/src/robot/Indoor-mobile-robot-with-arms/src/PerformModule/include/**",
+        "/home/zhjd/ws_active/src/kinect/EAO-Fusion/ros_test/include/**",
+        "/home/zhjd/ws_active/src/kinect/EAO-Fusion2/ros_test/include/**",
+        "/home/zhjd/ws_active/src/kinect/EAO-Fusion3/ros_test/include/**",
+        "/home/zhjd/active_eao/src/active_eao/include/**",
+        "/home/zhjd/ws_active/src/robot/Indoor-mobile-robot-with-arms/src/arm/arm_control/include/**",
+        "/home/zhjd/ws_active/src/algorithm/astar/include/**",
+        "/home/zhjd/workspace/kinect_dk/src/Azure_Kinect_ROS_Driver/include/**",
+        "/home/zhjd/ws_active/src/kinect/darknet_ros/darknet_ros/include/**",
+        "/home/zhjd/ws_turtlebot_custom/src/depthimage_to_laserscan/include/**",
+        "/home/zhjd/ws_active/src/robot/dynamicvoronoi/include/**",
+        "/home/zhjd/ws_active/src/algorithm/exploration/explore/include/**",
+        "/home/zhjd/ws_active/src/algorithm/m-explore(explore_lite)/explore/include/**",
+        "/home/zhjd/ws_active/src/robot/fabo_robot/include/**",
+        "/home/zhjd/ws_active/src/tool/imu_tools/imu_complementary_filter/include/**",
+        "/home/zhjd/ws_active/src/tool/imu_tools/imu_filter_madgwick/include/**",
+        "/home/zhjd/ws_turtlebot_custom/src/kobuki_auto_docking/include/**",
+        "/home/zhjd/ws_turtlebot_custom/src/kobuki_bumper2pc/include/**",
+        "/home/zhjd/ws_turtlebot_custom/src/kobuki_controller_tutorial/include/**",
+        "/home/zhjd/ws_turtlebot_custom/src/kobuki_desktop/kobuki_gazebo_plugins/include/**",
+        "/home/zhjd/ws_turtlebot_custom/src/kobuki_keyop/include/**",
+        "/home/zhjd/ws_turtlebot_custom/src/kobuki_node/include/**",
+        "/home/zhjd/ws_turtlebot_custom/src/kobuki_random_walker/include/**",
+        "/home/zhjd/ws_turtlebot_custom/src/kobuki_safety_controller/include/**",
+        "/home/zhjd/ws_active/src/algorithm/map_frontier/include/**",
+        "/home/zhjd/ws_active/src/algorithm/m-explore(explore_lite)/map_merge/include/**",
+        "/home/zhjd/ws_active/src/octomap/publish_pointcloud2/publish_pointcloud/include/**",
+        "/home/zhjd/ws_active/src/robot/Indoor-mobile-robot-with-arms/src/arm/rm_msgs/include/**",
+        "/home/zhjd/ws_turtlebot_custom/src/robot_pose_ekf/include/**",
+        "/home/zhjd/ws_active/src/algorithm/RRT_exploration/rrt_exploration-master/include/**",
+        "/home/zhjd/ws_active/src/tool/rviz_visual_tools/include/**",
+        "/home/zhjd/ws_turtlebot_custom/src/turtlebot_apps-indigo/turtlebot_actions/include/**",
+        "/home/zhjd/workspace/cartographer_build/src/urg_node/include/**",
+        "/home/zhjd/ws_active/src/robot/voronoi_planner/include/**",
+        "/home/zhjd/ws_turtlebot_custom/src/kobuki_desktop/joystick_drivers/wiimote/include/**",
+        "/home/zhjd/ws_turtlebot_custom/src/yocs_cmd_vel_mux/include/**",
+        "/home/zhjd/ws_turtlebot_custom/src/yocs_controllers/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

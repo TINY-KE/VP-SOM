@@ -1,0 +1,7 @@
+image: /home/zhjd/workspace/ws_huchunxu/src/ros_exploring/my_mobilearm/ASLAM_gazebo_world/map/map.pgm
+resolution: 0.050000
+origin: [-15.400000, -12.200000, 0.000000]
+negate: 0
+occupied_thresh: 0.65
+free_thresh: 0.196
+

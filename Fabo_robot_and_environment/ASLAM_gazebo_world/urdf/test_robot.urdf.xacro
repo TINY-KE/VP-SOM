@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+
+<robot name="mrobot" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+	<xacro:include filename="$(find ASLAM_gazebo_world)/urdf/test_robot_body.urdf.xacro" />
+	<!-- <xacro:include filename="$(find ASLAM_gazebo_world)/urdf/novisual_robot_body.urdf.xacro" /> -->
+
+	<!-- Body of mrobot, with plates, standoffs -->
+	<mrobot_body/>
+
+</robot>

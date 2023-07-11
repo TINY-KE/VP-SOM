@@ -1,0 +1,8 @@
+controller_list:
+  - name: fake_neck_controller
+    type: $(arg fake_execution_type)
+    joints:
+      - joint_neck_1
+initial:  # Define initial robot poses.
+  - group: neck
+    pose: home

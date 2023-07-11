@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="fabo_shell">
+  <link
+    name="shell_link">
+    <inertial>
+      <origin
+        xyz="-0.00294082483465983 0.000146714888625652 0.442160868151096"
+        rpy="0 0 0" />
+      <mass
+        value="10.0737609347136" />
+      <inertia
+        ixx="0.172898160476508"
+        ixy="2.31745522812561E-06"
+        ixz="-0.00159810687296311"
+        iyy="0.148915768801367"
+        iyz="-4.49683641611027E-05"
+        izz="0.146063097245756" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fabo_shell/meshes/shell_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fabo_shell/meshes/shell_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+</robot>

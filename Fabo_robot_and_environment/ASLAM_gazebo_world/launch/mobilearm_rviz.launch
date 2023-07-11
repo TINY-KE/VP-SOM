@@ -1,0 +1,7 @@
+<launch>
+<arg name="debug" default="false"/>
+<include file="$(find test_mobilearm_moveit_config)/launch/moveit_rviz.launch">
+        <arg name="rviz_config" value="$(find test_mobilearm_moveit_config)/launch/moveit.rviz"/>
+        <arg name="debug" value="$(arg debug)"/>
+</include>
+</launch>

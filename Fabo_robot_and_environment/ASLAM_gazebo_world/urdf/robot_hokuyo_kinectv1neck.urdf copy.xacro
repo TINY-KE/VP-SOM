@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<robot name="mrobot" xmlns:xacro="http://www.ros.org/wiki/xacro">
+<!-- robot_mrobot/mrobot_gazebo/urdf/dianzikeji -->
+   
+    <xacro:include filename="$(find ASLAM_gazebo_world)/urdf/test_robot.urdf.xacro" />
+
+    <!-- <xacro:include filename="$(find ASLAM_gazebo_world)/urdf/test_arm.xacro" /> -->
+    
+
+
+    <!-- 雷达hokuyo --><!-- 相机kinectv1 -->
+    <!-- <xacro:include filename="$(find ASLAM_gazebo_world)/urdf/hokuyo.urdf.xacro" />
+	<xacro:property name="laser_offset_x" value="0.2" />
+	<xacro:property name="laser_offset_y" value="0" />
+	<xacro:property name="laser_offset_z" value="-0.1" />
+	<xacro:laser_hokuyo parent="plate_2_link" laser_offset_x="${laser_offset_x}" laser_offset_y="${laser_offset_y}" laser_offset_z="${laser_offset_z}" />
+
+
+    
+    <xacro:include filename="$(find ASLAM_gazebo_world)/urdf/kinectv1_neck.urdf.xacro" />
+	<xacro:property name="camera_offset_x" value="0.0" />
+	<xacro:property name="camera_offset_y" value="0.0" />
+	<xacro:property name="camera_offset_z" value="0.4" />
+	<xacro:kinectv1_neck parent="plate_2_link" camera_offset_x="${camera_offset_x}" camera_offset_y="${camera_offset_y}" camera_offset_z="${camera_offset_z}" />
+ -->
+
+</robot>

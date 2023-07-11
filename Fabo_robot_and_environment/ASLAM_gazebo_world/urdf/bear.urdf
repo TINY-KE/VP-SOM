@@ -1,0 +1,15 @@
+<model name="teddy_bear">
+  <pose>0 0 0 0 0 0</pose>
+  <static>true</static>
+  <link name="teddy_bear_link">
+    <visual name="teddy_bear_visual">
+      <geometry>
+        <mesh>
+          <uri>model://teddy_bear/meshes/teddy_bear.dae</uri>
+          <!-- <uri>model://teddy_bear/meshes/teddy_bear.dae</uri> -->
+          <scale>0.001 0.001 0.001</scale>
+        </mesh>
+      </geometry>
+    </visual>
+  </link>
+</model>

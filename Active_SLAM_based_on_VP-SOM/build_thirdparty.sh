@@ -1,0 +1,37 @@
+echo "Configuring and building Thirdparty/DBoW2 ..."
+
+cd Thirdparty/DBoW2
+mkdir build
+cd build
+cmake .. -DCMAKE_BUILD_TYPE=Release
+make -j8
+
+cd ../../g2o
+
+echo "Configuring and building Thirdparty/g2o ..."
+
+mkdir build
+cd build
+cmake .. -DCMAKE_BUILD_TYPE=Release
+make -j8
+
+cd ../../Line3Dpp
+echo "Configuring and building Thirdparty/Line3Dpp ..."
+mkdir build
+cd build
+cmake .. -DCMAKE_BUILD_TYPE=Release
+make -j8
+
+# echo "Uncompress vocabulary ..."
+
+# cd Vocabulary
+# tar -xf ORBvoc.txt.tar.gz
+# cd ..
+
+# echo "Configuring and building ORB_SLAM2 ..."
+
+# mkdir build
+# cd build
+# # cmake .. -DCMAKE_BUILD_TYPE=Release
+# cmake .. -DCMAKE_BUILD_TYPE=Debug
+# make -j12

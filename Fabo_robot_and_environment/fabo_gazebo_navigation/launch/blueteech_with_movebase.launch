@@ -1,0 +1,18 @@
+<launch>
+    <!-- 启动hokuyo 10xl -->
+    <include file="$(find urg_node)/launch/urg_lidar.launch" />
+
+    <!-- cmdvel_to_blueteech节点 -->
+    <node name="cmdvel_to_blueteeth" pkg="cmdvel_to_blueteeth" type="cmdvel_to_blueteeth_node" />
+
+    <!-- 启动cartograpger定位节点 -->
+    <include file="$(find cartographer_ros)/launch/hokuyo_localiaztion.launch" />
+    
+    <!-- 运行move_base节点 -->
+    <include file="$(find cmdvel_to_blueteeth)/launch/move_base.launch" />
+    
+    
+    <!-- 运行rviz -->
+    <include file="$(find turtlebot_rviz_launchers)/launch/view_navigation.launch" />
+
+</launch>

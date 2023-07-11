@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<robot name="mrobot" xmlns:xacro="http://www.ros.org/wiki/xacro">
+<!-- robot_mrobot/mrobot_gazebo/urdf/dianzikeji -->
+   
+    <xacro:include filename="$(find ASLAM_gazebo_world)/urdf/test_robot.urdf.xacro" />
+
+    <xacro:include filename="$(find ASLAM_gazebo_world)/urdf/test_arm.xacro" />
+    
+
+    <xacro:property name="offset_x" value="0.03" />
+    <xacro:property name="offset_y" value="0" />
+    <xacro:property name="offset_z" value="0.02" />
+
+
+    <joint name="connect_joint" type="fixed">
+        <origin xyz="${offset_x} ${offset_y} ${offset_z}" rpy="0 0 0" />
+        <parent link="plate_2_link"/>
+        <child link="base1_link"/>
+    </joint>
+
+    <!-- 雷达 -->
+    <xacro:include filename="$(find ASLAM_gazebo_world)/urdf/test_rplidar.xacro" />
+
+	<xacro:property name="rplidar_offset_x" value="0" />
+	<xacro:property name="rplidar_offset_y" value="0" />
+	<xacro:property name="rplidar_offset_z" value="-0.028" />
+
+    <joint name="rplidar_joint" type="fixed">
+		<origin xyz="${rplidar_offset_x} ${rplidar_offset_y} ${rplidar_offset_z}" rpy="0 0 0" />
+		<parent link="plate_2_link"/>
+		<child link="laser_link"/>
+	</joint>
+
+	<xacro:rplidar prefix="laser"/>
+
+</robot>

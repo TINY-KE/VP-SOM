@@ -1,0 +1,67 @@
+<?xml version="1.0"?>  
+    <robot name="laser_hokuyo" xmlns:xacro="http://ros.org/wiki/xacro">  
+      <!-- <xacro:include filename="$(find ASLAM_gazebo_world)/urdf/turtlebot_thirdparty/turtlebot_gazebo.urdf.xacro"/>   -->
+      <!-- <xacro:include filename="$(find ASLAM_gazebo_world)/urdf/turtlebot_thirdparty/turtlebot_properties.urdf.xacro"/>   -->
+      
+      <!-- Set up laser gazebo details -->  
+      <xacro:macro name="sim_hokuyo_range_finder">
+            <!-- RPLidar Laser Range Finder -->
+            <gazebo reference="laser">
+              <sensor type="ray" name="hokuyo_sensor">
+                <pose>0 0 0 0 0 0</pose>
+                <visualize>false</visualize>
+                <update_rate>40</update_rate>
+                <ray>
+                  <scan>
+                    <horizontal>
+                      <samples>720</samples><!-- 0.9 degrees -->
+                      <min_angle>-1.570796</min_angle>
+                      <max_angle>1.570796</max_angle>
+                    </horizontal>
+                  </scan>
+                  <range>
+                    <min>0.1</min>
+                    <max>20.0</max>   <!--zhangjiadong-->
+                    <resolution>0.01</resolution>
+                  </range>
+                  <noise>
+                    <type>gaussian</type>
+                    <mean>0.0</mean>
+                    <stddev>0.01</stddev>
+                  </noise>
+                </ray>
+                <plugin name="gazebo_ros_hokuyo_controller" filename="libgazebo_ros_laser.so">
+                  <topicName>scan</topicName>
+                  <frameName>laser</frameName>
+                </plugin>
+              </sensor>
+            </gazebo>
+      </xacro:macro>
+      
+      <xacro:macro name="laser_hokuyo" params="parent laser_offset_x laser_offset_y laser_offset_z">  
+        <joint name="laser" type="fixed">  
+          <origin xyz="${laser_offset_x} ${laser_offset_y} ${laser_offset_z}" rpy="0 0.0 0.0" />  
+          <parent link="${parent}" />  
+          <child link="laser" />  
+        </joint>  
+      
+        <link name="laser">  
+          <visual>  
+            <geometry>  
+              <box size="0.05 0.05 0.05" />  
+            </geometry>  
+            <material name="Black" />  
+          </visual>  
+          <inertial>  
+            <mass value="0.000001" />  
+            <origin xyz="0 0 0" />  
+            <inertia ixx="0.0001" ixy="0.0" ixz="0.0"  
+              iyy="0.0001" iyz="0.0"  
+              izz="0.0001" />  
+          </inertial>  
+        </link>  
+        <sim_hokuyo_range_finder/>
+      </xacro:macro>  
+
+      
+</robot>  

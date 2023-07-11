@@ -1,0 +1,7 @@
+<launch>
+<arg name="debug" default="false"/>
+<include file="$(find robot_hokuyo_kinectv1neck)/launch/moveit_rviz.launch">
+        <arg name="rviz_config" value="$(find robot_hokuyo_kinectv1neck)/launch/moveit.rviz"/>
+        <arg name="debug" value="$(arg debug)"/>
+</include>
+</launch>

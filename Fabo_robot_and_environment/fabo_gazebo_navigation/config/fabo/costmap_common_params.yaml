@@ -1,0 +1,12 @@
+obstacle_range: 2.5
+raytrace_range: 5.0
+robot_radius: 0.5
+inflation_radius: 0.3
+
+cost_scaling_factor:  15.0  #障碍物膨胀比例系数，全局路径呈锯齿状时调大
+max_obstacle_height: 0.6
+min_obstacle_height: 0.0
+observation_sources: scan
+scan: {data_type: LaserScan, topic: /scan, marking: true, clearing: true, expected_update_rate: 0}
+
+
