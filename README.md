@@ -44,9 +44,9 @@ There are many parameters in the file "config/kinectv1.yaml" that can affect VP-
 + **[ConstraintType]** :
 + **[ObserveMaxNumBackgroudObject]** :
 + **[IE.ThresholdEndMapping]** :
-+ **[Plane.Height.Max** and **[Plane.Height.Min]** :
++ **[Plane.Height.Max]** and **[Plane.Height.Min]** :
 + **[IE.PublishIEwheel]** :
-+ **[IE.P_occ**, **[IE.P_free**, **[IE.P_prior]** :
++ **[IE.P_occ]**, **[IE.P_free]**, **[IE.P_prior]** :
 + **[IE.ThresholdPointNum]** :
 + Series of **[Trobot_camera]** :
 + Series of **[Tworld_camer]** :
